@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Outlet, NavLink, Link } from "react-router";
-import { Menu, X, Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin, Share2, Heart, ExternalLink } from "lucide-react";
 
 export default function Layout() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -201,7 +201,7 @@ export default function Layout() {
               © 2024 Apex Modern Builders. All rights reserved.
             </p>
             <div className="flex items-center gap-5">
-              {[Facebook, Instagram, Linkedin].map((Icon, i) => (
+              {[Share2, Heart, ExternalLink].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
